@@ -1,0 +1,10 @@
+1. git init
+2. git add .
+3. git commit -m "message"
+4. git push "repository url"
+5. git push --set-upstream https://github.com/nawsish9005/quwetVisa.git master
+
+change something
+1. git add .
+2. git commit -m "message"
+3. git push
