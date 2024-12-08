@@ -2,7 +2,6 @@ package com.visa.quwetVisa.models;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "files")
@@ -11,11 +10,9 @@ public class FileDB {
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
-
     private String name;
 
     private String type;
-
     @Lob
     @Column(columnDefinition = "VARBINARY(MAX)")
     private byte[] data;
